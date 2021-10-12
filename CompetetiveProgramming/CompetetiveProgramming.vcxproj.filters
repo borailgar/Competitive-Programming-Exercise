@@ -48,21 +48,27 @@
       <Filter>Header Files\Utility</Filter>
     </ClInclude>
     <ClInclude Include="LeetCode\LeetCode-4.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
     <ClInclude Include="LeetCode\LeetCode-21.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
     <ClInclude Include="LeetCode\LeetCode-136.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
     <ClInclude Include="LeetCode\LeetCode-200.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
     <ClInclude Include="LeetCode\LeetCode-1137.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
     <ClInclude Include="CodeForces\CodeForce-1598A.h">
+      <Filter>Header Files\CodeForces</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeForces\CodeForce-1598B.h">
+      <Filter>Header Files\CodeForces</Filter>
+    </ClInclude>
+    <ClInclude Include="LeetCode\LeetCode-15.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

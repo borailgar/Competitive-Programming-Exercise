@@ -80,6 +80,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\LeetCode;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\Utility;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\CodeForces;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -146,8 +147,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CodeForces\CodeForce-1598A.h" />
+    <ClInclude Include="CodeForces\CodeForce-1598B.h" />
     <ClInclude Include="LeetCode\LeetCode-1137.h" />
     <ClInclude Include="LeetCode\LeetCode-136.h" />
+    <ClInclude Include="LeetCode\LeetCode-15.h" />
     <ClInclude Include="LeetCode\LeetCode-200.h" />
     <ClInclude Include="LeetCode\LeetCode-21.h" />
     <ClInclude Include="LeetCode\LeetCode-4.h" />
