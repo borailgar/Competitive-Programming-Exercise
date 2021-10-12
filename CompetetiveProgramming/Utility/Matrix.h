@@ -4,7 +4,7 @@
 #include <cstddef>
 #include <iterator>
 
-template <typename T, std::size_t N0, std::size_t N1> struct Matrix2x2
+template <typename T, std::size_t N0, std::size_t N1> struct Matrix
 {
     using row_t = std::array<T, N1>;
     inline static constexpr std::array sizes{N0, N1};
@@ -118,7 +118,7 @@ template <typename T, std::size_t N0, std::size_t N1> struct Matrix2x2
         }
     }
 
-    friend void swap(Matrix2x2 &a, Matrix2x2 &b)
+    friend void swap(Matrix &a, Matrix &b)
     {
         a.data_.swap(b.data_);
     }

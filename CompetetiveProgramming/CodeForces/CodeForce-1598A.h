@@ -10,7 +10,7 @@
  * http://codeforces.com/problemset/problem/1598/A
  */
 
-#include "Utility/Matrix.h"
+#include "../Utility/Matrix.h"
 #include <stack>
 
 #include <algorithm>
@@ -38,8 +38,8 @@ struct Direction
 constexpr int ROW = 2;
 
 #define REQUIRES(...) typename std::enable_if<(__VA_ARGS__), bool>::type = true
-template <size_t COL, REQUIRES(COL >= 3)> using Grid_t = Matrix2x2<int, COL, ROW>;
-template <size_t COL, REQUIRES(COL >= 3)> using DiscoveryGrid_t = Matrix2x2<bool, COL, ROW>;
+template <size_t COL, REQUIRES(COL >= 3)> using Grid_t = Matrix<int, COL, ROW>;
+template <size_t COL, REQUIRES(COL >= 3)> using DiscoveryGrid_t = Matrix<bool, COL, ROW>;
 
 constexpr int N = 8;
 constexpr std::array<Direction, N> directions{{{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {-1, -1}, {1, -1}, {-1, 1}}};
