@@ -6,6 +6,7 @@
 #include <iostream>
 #include <queue>
 #include <vector>
+#define REQUIRES(...) typename std::enable_if<(__VA_ARGS__), bool>::type = true
 
 struct Direction
 {
@@ -13,7 +14,6 @@ struct Direction
     int x, y;
 };
 
-#define REQUIRES(...) typename std::enable_if<(__VA_ARGS__), bool>::type = true
 
 template <typename T, size_t COL, size_t ROW, REQUIRES(COL >= 3 && ROW >= 2)> using Grid_t = Matrix<T, COL, ROW>;
 template <size_t COL, size_t ROW, REQUIRES(COL >= 3 && ROW >= 2)> using DiscoveryGrid_t = Matrix<bool, COL, ROW>;
