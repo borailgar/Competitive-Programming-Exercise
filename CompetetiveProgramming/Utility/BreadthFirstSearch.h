@@ -9,9 +9,7 @@
 
 struct Direction
 {
-    constexpr Direction(int _x, int _y) : x(_x), y(_y)
-    {
-    }
+    constexpr Direction(int _x, int _y) : x(_x), y(_y) {}
     int x, y;
 };
 
