@@ -74,5 +74,8 @@
     <ClInclude Include="LeetCode\LeetCode-8.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Utility\ContainerValidation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
