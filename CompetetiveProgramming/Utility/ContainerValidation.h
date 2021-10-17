@@ -82,3 +82,22 @@ std::size_t sorted(BidirIt _First, BidirIt _Last, std::size_t &position, _Pred c
 
     return is_sorted;
 }
+
+template <typename FwdIt, typename Predicate>
+auto find_if_block(FwdIt beg, FwdIt end, Predicate cmp)
+    -> std::pair<typename FwdIt::difference_type, typename FwdIt::difference_type>
+{
+    typename FwdIt::difference_type start_index{};
+    for (auto b = beg; b != end; ++b)
+    {
+        if (cmp(*b))
+        {
+            start_index = std::distance(beg, b);
+            break;
+        }
+    }
+
+    typename FwdIt::difference_type end_index{};
+    std::for_each(beg + start_index, end, [&](typename FwdIt::value_type val) { cmp(val) ? end_index++ : end_index; });
+    return std::make_pair(start_index, end_index);
+}
