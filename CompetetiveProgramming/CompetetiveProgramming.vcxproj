@@ -155,6 +155,7 @@
     <ClInclude Include="LeetCode\LeetCode-200.h" />
     <ClInclude Include="LeetCode\LeetCode-21.h" />
     <ClInclude Include="LeetCode\LeetCode-4.h" />
+    <ClInclude Include="LeetCode\LeetCode-8.h" />
     <ClInclude Include="Utility\BinaryTree.h" />
     <ClInclude Include="Utility\BinSearch.h" />
     <ClInclude Include="Utility\BreadthFirstSearch.h" />

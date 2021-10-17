@@ -71,5 +71,8 @@
     <ClInclude Include="LeetCode\LeetCode-15.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LeetCode\LeetCode-8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
