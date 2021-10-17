@@ -65,7 +65,7 @@ template <typename T, typename U, typename C = std::less<>> constexpr int compar
     return 0;
 }
 
-std::ostream &operator<<(std::ostream &os, const std::array<int, N> &arr)
+template <size_t N> std::ostream &operator<<(std::ostream &os, const std::array<int, N> &arr)
 {
     for (auto &i : arr)
     {

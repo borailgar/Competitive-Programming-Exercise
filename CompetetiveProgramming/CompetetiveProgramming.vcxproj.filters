@@ -68,14 +68,14 @@
     <ClInclude Include="CodeForces\CodeForce-1598B.h">
       <Filter>Header Files\CodeForces</Filter>
     </ClInclude>
-    <ClInclude Include="LeetCode\LeetCode-15.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Utility\ContainerValidation.h">
+      <Filter>Header Files\Utility</Filter>
     </ClInclude>
     <ClInclude Include="LeetCode\LeetCode-8.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
-    <ClInclude Include="Utility\ContainerValidation.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="LeetCode\LeetCode-15.h">
+      <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
