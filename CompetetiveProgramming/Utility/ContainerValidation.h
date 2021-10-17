@@ -1,5 +1,29 @@
 #pragma once
 
+/**
+MIT License
+
+Copyright(c) 2021 Bora Ilgar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this softwareand associated documentation files(the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and /or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions :
+
+The above copyright noticeand this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
 #include <algorithm>
 #include <array>
 #include <ostream>
@@ -59,7 +83,7 @@ template <class FwdIt> std::ostream &display_container(std::ostream &os, FwdIt f
     return os;
 }
 
-// Check if container sorted
+// Check if provided container sorted
 template <class BidirIt, class _Pred>
 std::size_t sorted(BidirIt _First, BidirIt _Last, std::size_t &position, _Pred compare)
 {
@@ -83,6 +107,7 @@ std::size_t sorted(BidirIt _First, BidirIt _Last, std::size_t &position, _Pred c
     return is_sorted;
 }
 
+// Find value block
 template <typename FwdIt, typename Predicate>
 auto find_if_block(FwdIt beg, FwdIt end, Predicate cmp)
     -> std::pair<typename FwdIt::difference_type, typename FwdIt::difference_type>
