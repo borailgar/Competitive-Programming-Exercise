@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -80,7 +80,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\LeetCode;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\Utility;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\CodeForces;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\LeetCode;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\Utility;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\Interview\Bites;C:\Users\borah\source\repos\CompetetiveProgramming\CompetetiveProgramming\CodeForces;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -118,7 +118,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -147,8 +147,12 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdventOfCode\Day1\P1\Solution.hpp" />
+    <ClInclude Include="AdventOfCode\Day1\P2\Solution.hpp" />
     <ClInclude Include="CodeForces\CodeForce-1598A.h" />
     <ClInclude Include="CodeForces\CodeForce-1598B.h" />
+    <ClInclude Include="LeetCode\LeetCode-10.h" />
+    <ClInclude Include="LeetCode\LeetCode-11.h" />
     <ClInclude Include="LeetCode\LeetCode-1137.h" />
     <ClInclude Include="LeetCode\LeetCode-136.h" />
     <ClInclude Include="LeetCode\LeetCode-15.h" />
@@ -156,6 +160,7 @@
     <ClInclude Include="LeetCode\LeetCode-21.h" />
     <ClInclude Include="LeetCode\LeetCode-4.h" />
     <ClInclude Include="LeetCode\LeetCode-8.h" />
+    <ClInclude Include="LeetCode\LeetCode-5.h" />
     <ClInclude Include="Utility\BinaryTree.h" />
     <ClInclude Include="Utility\BinSearch.h" />
     <ClInclude Include="Utility\BreadthFirstSearch.h" />
@@ -163,6 +168,10 @@
     <ClInclude Include="Utility\List.h" />
     <ClInclude Include="Utility\Matrix.h" />
     <ClInclude Include="Utility\SolutionRunner.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AdventOfCode\Day1\P1\Input.txt" />
+    <Text Include="AdventOfCode\Day1\P1\TestInput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

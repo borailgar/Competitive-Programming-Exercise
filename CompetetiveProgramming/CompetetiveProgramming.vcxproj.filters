@@ -77,5 +77,24 @@
     <ClInclude Include="LeetCode\LeetCode-15.h">
       <Filter>Header Files\LeetCode</Filter>
     </ClInclude>
+    <ClInclude Include="AdventOfCode\Day1\P1\Solution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdventOfCode\Day1\P2\Solution.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeetCode\LeetCode-5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeetCode\LeetCode-10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeetCode\LeetCode-11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="AdventOfCode\Day1\P1\Input.txt" />
+    <Text Include="AdventOfCode\Day1\P1\TestInput.txt" />
   </ItemGroup>
 </Project>
