@@ -73,6 +73,8 @@ struct FList
         }
     }
 
+    virtual void swapPairs() = 0;
+
     void clean_list()
     {
         while (headNode)
@@ -88,7 +90,7 @@ struct FList
         clean_list();
     }
 
-  private:
+  protected:
     std::unique_ptr<Node> headNode;
 };
 
