@@ -72,9 +72,7 @@ void N_Queen(Matrix<char, N, N>& maze, uint32_t row)
 
 
 /// TEST
-///
 /// constexpr size_t N = 5;
-/// 
 /// Matrix<char, N, N> maze;
 /// maze.fill('.');
 /// N_Queen(maze, 0);
