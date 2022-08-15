@@ -4,7 +4,8 @@
 #include <cstddef>
 #include <iterator>
 
-template <typename T, std::size_t N0, std::size_t N1> struct Matrix
+template <typename T, std::size_t N0, std::size_t N1> 
+struct Matrix
 {
     using row_t = std::array<T, N1>;
     inline static constexpr std::array sizes{N0, N1};
